@@ -1,4 +1,4 @@
-# spring-app
+# Sales Management System
 
 <h2>Endpoints</h2>
 
