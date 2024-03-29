@@ -34,3 +34,8 @@
     <li><strong>GET</strong>: <code>/api/reports/products</code> - Retrieve products report.</li>
 </ul>
 
+
+## Class Diagram
+
+![diagram](https://github.com/Kareem-Khaled/Maids-Quiz/assets/53629881/3e9906f0-64cf-41fa-bd56-efa537793993)
+
