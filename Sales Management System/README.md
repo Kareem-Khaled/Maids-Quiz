@@ -2,28 +2,32 @@
 
 <h2>Endpoints</h2>
 
-<h3>/api/users</h3>
+<h3>User Authentication</h3>
 <ul>
-    <li><strong>GET</strong>: Retrieve a list of all users.</li>
-    <li><strong>POST</strong>: Create a new user.</li>
+    <li><strong>POST</strong>: <code>/auth/register</code> - Register a new user.</li>
+    <li><strong>POST</strong>: <code>/auth/login</code> - Login with existing credentials.</li>
 </ul>
 
-<h3>/api/users/:id</h3>
+<h3>Product Management</h3>
 <ul>
-    <li><strong>GET</strong>: Retrieve a specific user by ID.</li>
-    <li><strong>PUT</strong>: Update a specific user by ID.</li>
-    <li><strong>DELETE</strong>: Delete a specific user by ID.</li>
+    <li><strong>GET</strong>: <code>/api/product-categories</code> - Retrieve all product categories.</li>
+    <li><strong>GET, POST</strong>: <code>/api/products</code> - Retrieve all products or add a new product.</li>
 </ul>
 
-<h3>/api/products</h3>
+<h3>Client Management</h3>
 <ul>
-    <li><strong>GET</strong>: Retrieve a list of all products.</li>
-    <li><strong>POST</strong>: Create a new product.</li>
+    <li><strong>GET, POST</strong>: <code>/api/clients</code> - Retrieve all clients or add a new client.</li>
 </ul>
 
-<h3>/api/products/:id</h3>
+<h3>Sales Management</h3>
 <ul>
-    <li><strong>GET</strong>: Retrieve a specific product by ID.</li>
-    <li><strong>PUT</strong>: Update a specific product by ID.</li>
-    <li><strong>DELETE</strong>: Delete a specific product by ID.</li>
+    <li><strong>GET, POST</strong>: <code>/api/sales</code> - Retrieve all sales or add a new sale.</li>
 </ul>
+
+<h3>Reports</h3>
+<ul>
+    <li><strong>GET</strong>: <code>/api/reports/sales?startDate=YYYY-MM-DD&amp;endDate=YYYY-MM-DD</code> - Retrieve sales report within a date range.</li>
+    <li><strong>GET</strong>: <code>/api/reports/clients</code> - Retrieve clients report.</li>
+    <li><strong>GET</strong>: <code>/api/reports/products</code> - Retrieve products report.</li>
+</ul>
+
